@@ -1,0 +1,197 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+     <link rel="stylesheet" href="{% static 'assets/css/swiper-bundle.min.css' %}">
+     <title>Henrique Yuiti</title>
+     <meta name="description" content="Henrique Yuiti self-taught backender developer in Python/Django.">
+     <link rel="shortcut icon" href="{% static 'assets/favicon/favicon.ico' %}">
+     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/favicon/apple-touch-icon.png' %}">
+     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/favicon/favicon-32x32.png' %}">
+     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/favicon/favicon-16x16.png' %}">
+     <link rel="android-chrome-192x192" type="image/png" sizes="16x16" href="{% static 'assets/favicon/android-chrome-192x192.png' %}">
+     <link rel="android-chrome-512x512" type="image/png" sizes="16x16" href="{% static 'assets/favicon/android-chrome-512x512.png' %}">
+</head>
+     
+
+<body>
+     <!-- Header -->
+     <header class="headersettings"> 
+          <nav class="headermenu">
+               <a href="#projects" class="headeritem">Projects</a>
+               <a href="#about" class="headeritem">About</a>
+               <a href="#contact" class="headeritem">Contact</a>
+          </nav>
+     </header>
+     <!-- Header -->
+
+     <!-- Main -->
+     <main>
+     <section class="sections-1 ">  
+          <!--Intro-->
+          <div class="intro-div">
+               <!-- Intro Information -->
+               <div class="intro-content">
+                    <div>
+                         <!-- Title -->
+                         <h2 class="intro-title-name" data-animation="left">I'm Henrique
+                              <span id="stylish">Yuiti</span>
+                         </h2>
+                         <!-- Title -->
+
+                         <!-- Developer Type -->
+                         <h1 class="intro-developer-type" data-animation="right"> 
+                              Back-End <span id="stylish">Developer</span> 
+                         </h1>
+                         <!-- Developer Type -->
+
+                         <!-- About Me - Textbox -->
+                         <p class="intro-textbox" data-animation="left"> Started learning Python, now working on Django, HTML5 and CSS3.</span>
+                         </p>
+                         <!-- About Me - Textbox -->
+
+                         <!-- Icons -->
+                         <div class="icons-intro-div">
+                              <nav class="iconmenu">
+                                   <a href="https://github.com/Yuitikom" target="_blank"><img src="{% static '/assets/images/github.png' %}"alt="" class="icon-item"></a>
+                                   <a href="https://www.linkedin.com/in/henrique-yuiti/" target="_blank"><img src="{% static '/assets/images/linkedin.png' %}" alt="" class="icon-item"></a>
+                              </nav>
+                         </div>
+                         <!-- Icons -->
+                         
+                    
+                         <!-- Button -->
+                         <div class="btn-grad-div">
+                         <a href="#projects"><button class="btn-grad" value="Projects">Projects</button></a>
+                         </div>
+                         <!-- Button -->
+                         
+                    </div>          
+               </div>
+               <!--Intro-->
+     </section>
+     <!-- Intro Information -->
+
+
+     <!-- About Me -->
+     <section class="sections-n" id="about">
+          <h1 class="titles">About <span id="stylish">Me</span></h1>
+
+          <!-- Image -->
+          <div class="aboutme-image-div">
+               <img src="{% static '/assets/images/me.jpg'%}" alt="" class="aboutme-image">
+          <!-- Image -->
+          </div>
+          <!-- About Textbox -->
+          <div class="about-me-box-div">
+               <!-- Class About Me Box -->
+               <div class="about-me-textbox">
+               <h2 class="about-me-textbox-title"> <span id="stylish">My History</span></h2>
+               <p class="about-me-textbox-text">
+                    I'm Henrique, passionated about mathematics, physics and technology.
+                    My first coding experience was C++ when i was 14 years old, unfortunately i couldn't find motivation to continue and
+                    stopped working on my coding skills until 2022.
+                    <br>
+                    <br>
+                    The end of June was nonetheless one of the most important period of my life. Mathematics gave me a new reason to get
+                    back into coding since it's fundamental for every modern mathematician to understand the new world and the new industry
+                    that already came to us.
+                    <br>
+                    <br> After finishing Object Oriented Programming, starting in Django was the right decision, but for me watching
+                    tutorial videos wasn't the purpose of learning. Instead, creating my own project was the best thing I had ever done.
+                    <br>
+                    <br>
+                    The first project was "Gaussian Lair", which was a blog for authorized users to share their knowledge incapsulated
+                    within articles, deployed on the "Day Of The Programmer". This work was nothing but the beginning of my path, it has no end and 
+                    journey, infinite by it's definition, is the learning process and construction of every programmer or aspiring programmer that one 
+                    day touched the keyboard.
+                    <br>
+                    <br>
+                    I'm currently working to understand networking better and also learning JavaScript. Since it's a very important language
+                    and every back-end developer must learn it.
+               </p>
+               <h2 class="about-me-textbox-title"> <span id="stylish">My Skills</span></h2>
+               <header class="headersettings">
+                    <nav class="headermenu">
+                         <nav class="about-me-navicons-menu">
+                         <img src="{% static '/assets/images/python.png' %}" alt="" class="about-me-navicons">
+                         <img src="{% static '/assets/images/html5.png' %}" alt="" class="about-me-navicons">
+                         <img src="{% static '/assets/images/css3.png' %}" alt="" class="about-me-navicons">
+                    </nav>
+               </header>
+               </div>
+               <!-- Class About Me Box -->
+
+          </div>
+          <!-- About Textbox -->
+     
+          <!-- Image -->
+     </section>
+     <!-- About Me -->
+
+     <!-- Projects -->
+     <section class="sections-n" id="projects">
+               <!-- Title -->
+               <div>
+                    <h1 class="titles">My <span id="stylish">Projects!</span> </h1>
+               </div>
+               <!-- Title -->                    
+               <!-- Projects Swiper -->
+               <div class="swiper slide-container ">
+                    <div class="projectbox">
+                         <!--Projects Boxes-->
+                         <div class="swiper-wrapper">               
+                              <!--Projects -->
+                              {% block projects %}
+                              {% endblock %}
+                         </div>
+                              <!-- Paginator -->
+                              <div class="swiper-button-next"></div>
+                              <div class="swiper-button-prev"></div>
+                              <div class="swiper-pagination"></div>
+                              <!-- Paginator -->
+                    </div>
+                    <!--Projects Boxes -->
+     </section>
+     <!-- Projects -->
+
+     <!-- Contact -->
+     <section class="sections-n" id="projects">
+          <!-- Title -->
+          <h1 class="titles">Get In<span id="stylish"> Touch</span> </h1>
+          <!-- Title -->
+
+
+          <!-- Contact Box -->
+          <!-- Write Me Section -->
+          <div class="write-me-box-div" id="contact">
+               <div class="write-me-box">
+                    <div class="write-me-box-image-div">
+                         <img src="{% static 'assets/images/email.png' %}" alt="" class="write-me-box-image">
+                    </div>
+                    <h2 class="writeme-box-title">Write Me</h2>
+                    {% block contact %} {% endblock %}
+                    </div>
+               </div>
+          <!-- Write Me Section -->
+          </div>
+     </section>    
+          <!-- Contact Box -->
+
+<!-- Write Me Info -->
+     </section>   
+     <!-- Contact -->
+     </main>
+     <!-- Main -->
+</body>
+<!-- Content -->
+
+<!-- Scripts -->
+     <script src="{% static '/assets/js/swiper-bundle.min.js' %}"></script>
+     <script src="{% static '/assets/js/main.js' %}"></script>
+<!-- Scripts -->
+
+</html>

@@ -1,0 +1,45 @@
+{% extends 'index.html'%} 
+{% load static %} 
+{% block projects %} 
+{% for project in project_obj %}
+<div class="projectbox-itens swiper-slide">
+  <img src="{{project.image.url }}" alt="" class="projectbox-image" />
+  <h2 class="projectbox-title">{{ project.name }}</h2>
+  <a href="{{ project.url }}" target="_blank">
+    <button class="projectbox-button" value="">Go To Project</button></a
+  >
+  <a href="{{ project.github_url }}" target="_blank">
+    <img
+      src="{% static '/assets/images/github-icon-project.png' %}"
+      alt=""
+      class="icon-project"
+/></a>
+</div>
+{% endfor %} 
+{% endblock %} 
+
+
+{% block contact %} 
+<form method="POST">
+  {% csrf_token %} 
+  <div class= "write-me-input-div"> 
+     {{form.name}}
+  </div>  
+   <div class= "write-me-input-div"> 
+     {{form.email}}
+  </div>  
+   <div class= "write-me-input-div"> 
+     {{form.message}}
+  </div> 
+<div class="send-button-div">
+  <input type="submit" value="Send" class="send-button" />
+
+</div>
+{% if success %}
+<p>bru? </p>
+{% endif %}
+</form>
+{% endblock %}
+
+
+

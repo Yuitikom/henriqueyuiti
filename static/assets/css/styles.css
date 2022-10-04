@@ -1,0 +1,520 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500&family=Rubik:wght@700&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Comfortaa", cursive;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  font-size: 100%;
+  box-sizing: border-box;
+  background: url("../images/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Header Settings */
+
+.headersettings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 24px;
+  font-size: 30px;
+}
+
+.headermenu {
+  display: flex;
+  gap: 60px;
+  color: white;
+}
+
+.headeritem {
+  color: white;
+}
+
+.headeritem:active {
+  color: orangered;
+}
+
+.headeritem:hover {
+  color: #ff4500;
+}
+
+/* Intro  */
+
+.intro-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.intro-content {
+  margin-top: 200px;
+  flex-direction: row;
+  text-align: center;
+}
+
+.intro-developer-type {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 70px;
+  animation: slideinright 2s forwards;
+}
+
+.intro-title-name {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  animation: slideinleft 2s forwards;
+}
+
+@keyframes slideinleft {
+  0% {
+    margin-left: -700px;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0px;
+    opacity: 100%;
+  }
+}
+
+@keyframes slideinright {
+  0% {
+    margin-left: 300px;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0px;
+    opacity: 100%;
+  }
+}
+
+#stylish {
+  color: #ff4500;
+}
+
+.intro-textbox {
+  text-align: justify;
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+
+.titles {
+  margin: 30px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+
+/* Buttons */
+
+.btn-grad-div {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #614385 0%,
+    #516395 51%,
+    #614385 100%
+  );
+  padding: 15px 45px;
+  text-transform: bold;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px rgb(238, 152, 121);
+  border-radius: 10px;
+  display: block;
+  border: none;
+  height: 80px;
+  width: 200px;
+}
+
+.btn-grad:hover {
+  background-position: center; /* change the direction of the change here */
+  color: orangered;
+  text-decoration: none;
+}
+
+.projectbox-button {
+  background-image: linear-gradient(
+    to right,
+    #614385 0%,
+    #516395 51%,
+    #614385 100%
+  );
+  margin-top: 45px;
+  margin-bottom: 35px;
+  margin-inline: 14%;
+  padding: 15px 45px;
+  text-transform: bold;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px rgb(238, 152, 121);
+  border-radius: 10px;
+  display: block;
+  border: none;
+  height: 80px;
+  width: 200px;
+  position: sticky;
+}
+
+.projectbox-button:hover {
+  background-position: center; /* change the direction of the change here */
+  color: orangered;
+  text-decoration: none;
+}
+
+.send-button-div {
+  display: flex;
+  justify-content: center;
+}
+
+.send-button {
+  background-image: linear-gradient(
+    to right,
+    #614385 0%,
+    #516395 51%,
+    #614385 100%
+  );
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding: 15px 45px;
+  text-transform: bold;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px rgb(238, 152, 121);
+  border-radius: 30px;
+  display: block;
+  border: none;
+  height: 80px;
+  width: 200px;
+  position: sticky;
+}
+
+.send-button:hover {
+  background-position: center; /* change the direction of the change here */
+  color: orangered;
+  text-decoration: none;
+}
+
+.button-project-creation-center-div {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.create-edit-project-button {
+  background-image: linear-gradient(
+    to right,
+    #614385 0%,
+    #516395 51%,
+    #614385 100%
+  );
+  padding: 15px 45px;
+  text-transform: bold;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px rgb(238, 152, 121);
+  border-radius: 30px;
+  display: block;
+  border: none;
+  height: 80px;
+  width: 200px;
+  position: absolute;
+  top: 540px;
+}
+
+.create-edit-project-button:hover {
+  background-position: center; /* change the direction of the change here */
+  color: orangered;
+  text-decoration: none;
+}
+
+/* Forms */
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: white;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #ff9900;
+}
+
+textarea {
+  border: 0;
+  outline: 0;
+}
+
+input {
+  border: 0;
+  outline: 0;
+}
+input:focus {
+  outline: none !important;
+}
+
+.write-me-box-div {
+  display: flex;
+  justify-content: center;
+}
+
+.write-me-box {
+  margin: 20px;
+  width: 800px;
+  border-radius: 10px;
+  background-color: #516395;
+  box-shadow: 0 0 35px rgb(238, 152, 121);
+  padding: 30px;
+}
+
+.write-me-box-image-div {
+  display: flex;
+  justify-content: center;
+}
+
+.write-me-box-image {
+  width: 50px;
+}
+
+.writeme-box-title {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  margin: 40px;
+}
+
+.write-me-input-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.write-me-input {
+  padding: 30px;
+  margin: 15px;
+  width: 500px;
+  height: 60px;
+  background-color: #7789bb;
+  box-shadow: 0 0 20px rgb(238, 152, 121);
+  border-color: white;
+  border-radius: 30px;
+  color: white;
+  display: block;
+}
+
+.write-me-textarea {
+  width: 500px;
+  height: 250px;
+  padding: 15px;
+  margin-top: 35px;
+  box-shadow: 0 0 20px rgb(238, 152, 121);
+  background-color: #7789bb;
+  border-color: white;
+  color: white;
+  border-radius: 30px;
+}
+
+/* Icons */
+
+.icons-intro-div {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.iconmenu {
+  margin-inline: 45%;
+  display: flex;
+  justify-content: baseline;
+  gap: 20px;
+}
+
+.icon-item {
+  display: flex;
+  width: 50px;
+  border: solid 3px white;
+  border-radius: 200px;
+  box-shadow: 0 0 35px rgb(238, 152, 121);
+}
+
+.icon-item:hover {
+  transform: scale(1.2);
+  background-color: white;
+  text-decoration: none;
+}
+
+.icon-project {
+  margin-inline: 39%;
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.icon-project:hover {
+  transform: scale(1.5);
+}
+
+/* Sections */
+
+.sections-1 {
+  margin-bottom: 300px;
+}
+
+.sections-n {
+  margin-bottom: 150px;
+}
+
+/* About Me */
+
+.aboutme-image-div {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutme-image {
+  margin: 50px;
+  background-image: url("../images/me.jpg");
+  box-shadow: 0 0 15px rgb(238, 152, 121);
+  border-radius: 200px;
+  width: 300px;
+}
+
+.aboutme-image:hover {
+  transform: scale(1.2);
+}
+
+.about-me-box-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-textbox {
+  width: 700px;
+  padding: 30px;
+  background-color: #516395;
+  border-radius: 30px;
+  box-shadow: 0 0 35px rgb(238, 152, 121);
+  color: white;
+  font-size: 20px;
+}
+
+.about-me-textbox-title {
+  margin: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.about-me-textbox-text {
+  text-align: justify;
+}
+.about-me-navicons-header {
+  margin-inline: 27%;
+}
+
+.about-me-navicons-menu {
+  gap: 30px;
+  display: flex;
+}
+
+.about-me-navicons {
+  width: 90px;
+}
+
+.about-me-navicons:hover {
+  transform: scale(1.5);
+}
+
+/* Project Box */
+
+.slide-container {
+  max-width: 1530px;
+}
+
+.projectbox {
+  margin: 0 100px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.projectbox-itens {
+  width: 400px;
+  height: 600px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(238, 152, 121);
+  background-color: #516395;
+  padding: 50px;
+  margin: 20px;
+  color: white;
+}
+
+.projectbox-title {
+  font-size: 35px;
+  margin: 20px;
+  text-align: center;
+  color: orangered;
+}
+
+.projectbox-textbox {
+  width: 300px;
+  height: 100px;
+  margin-bottom: 25px;
+  text-align: justify;
+  text-rendering: optimizeLegibility;
+  word-break: break-all;
+  font-size: 20px;
+}
+
+.projectbox-image {
+  box-shadow: 0 0 25px rgb(255, 255, 255);
+  border-radius: 25px;
+}
+
+.projectbox-image:hover {
+  transform: scale(1.2);
+}
+
+/* Project Creation */
+
+.project-creation-box-centerdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-creation-box {
+  margin: 30px;
+  height: 800px;
+  width: 700px;
+  background-color: #516395;
+  box-shadow: 0 0 20px rgb(238, 152, 121);
+  border-radius: 30px;
+  color: white;
+}
+
+.project-creation-title {
+  margin: 30px;
+  text-align: center;
+  font-size: 30px;
+}
